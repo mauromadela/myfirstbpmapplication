@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<hwTaskFlows xmlns="http://xmlns.oracle.com/bpel/workflow/hwTaskFlowProperties">
+   <ApplicationName>worklist</ApplicationName>
+   <LookupType>LOCAL</LookupType>
+   <TaskFlowDeploy>false</TaskFlowDeploy>
+   <TaskFlowServer>
+      <hostName/>
+      <httpPort/>
+      <httpsPort/>
+   </TaskFlowServer>
+<hwTaskFlow><WorkflowName>InitEmployeeRegistration2</WorkflowName><TaskDefinitionNamespace>http://xmlns.oracle.com/BpmApplication/BpmProject/InitEmployeeRegistration2</TaskDefinitionNamespace><TaskFlowId>InitEmployeeRegistration2_TaskFlow</TaskFlowId><TaskFlowFileName>WEB-INF/InitEmployeeRegistration2_TaskFlow.xml</TaskFlowFileName></hwTaskFlow></hwTaskFlows>

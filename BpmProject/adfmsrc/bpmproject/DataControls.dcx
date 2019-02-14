@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration" version="12.2.1.9.14" id="DataControls"
+                    Package="bpmproject">
+  <AdapterDataControl id="ApprovalUI_ApprovalHumanTask" FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.bpel.services.datacontrol.XSDDataControlDefinition" SupportsTransactions="true"
+                      SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false" Definition="ApprovalUI_ApprovalHumanTask"
+                      BeanClass="ApprovalUI_ApprovalHumanTask" xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <XSDDataControl xmlns="http://xmlns.oracle.com/bpel/workflow/task"
+                      SchemaLocation="file:/home/msmadela/jdeveloper/mywork/BpmApplication/BpmProject/SOA/Schemas/ApprovalHumanTaskWorkflowTask.xsd"
+                      RootElement="task" rootelementnamespace="http://xmlns.oracle.com/bpel/workflow/task"
+                      taskLoc="../BpmProject/SOA/HumanTasks/ApprovalHumanTask.task" InitiationTask="false"
+                      DocumentStoreConfiguration="false"/>
+    </Source>
+  </AdapterDataControl>
+  <AdapterDataControl id="InitRegistrationUI_InitEmployeeRegistration2"
+                      FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.bpel.services.datacontrol.XSDDataControlDefinition" SupportsTransactions="true"
+                      SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false"
+                      Definition="InitRegistrationUI_InitEmployeeRegistration2"
+                      BeanClass="InitRegistrationUI_InitEmployeeRegistration2"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <XSDDataControl xmlns="http://xmlns.oracle.com/bpel/workflow/task"
+                      SchemaLocation="file:/home/msmadela/jdeveloper/mywork/BpmApplication/BpmProject/SOA/Schemas/InitEmployeeRegistration2WorkflowTask.xsd"
+                      RootElement="task" rootelementnamespace="http://xmlns.oracle.com/bpel/workflow/task"
+                      taskLoc="../BpmProject/SOA/HumanTasks/InitEmployeeRegistration2.task" InitiationTask="true"
+                      DocumentStoreConfiguration="false"/>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>
